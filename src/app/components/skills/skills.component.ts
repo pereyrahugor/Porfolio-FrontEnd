@@ -39,7 +39,7 @@ export class SkillsComponent implements OnInit {
           alert ("Se elimino correctamente el elemento selecionado.");
         },
         err => {
-          alert ("No se puedo eliminar la experiencia selecionada");
+          alert ("No se puedo eliminar el elemento selecionado.");
         }
         )
       }

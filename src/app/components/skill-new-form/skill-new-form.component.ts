@@ -25,7 +25,7 @@ export class SkillNewFormComponent implements OnInit {
                                       this.nameSkill, this.progress);
     console.log(skill);
     this.skillService.saveSkill(ski).subscribe(data=>{
-      alert("Se agrego una nueva experiencia correctamente");
+      alert("Se agrego una nueva habilidad correctamente");
       this.router.navigate(['']);
     }, err=>{
       alert("La creación Falló");

@@ -39,7 +39,7 @@ export class ProjectComponent implements OnInit {
           alert ("Se elimino correctamente el elemento selecionado.");
         },
         err => {
-          alert ("No se puedo eliminar el proyecto selecionada");
+          alert ("No se puedo eliminar el elemento selecionado.");
         }
         )
       }
