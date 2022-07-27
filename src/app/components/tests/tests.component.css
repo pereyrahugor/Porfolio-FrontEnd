@@ -1,0 +1,32 @@
+.row{
+    padding: 50px;
+    background-color: #010d19;
+    color: #79daf8;
+}
+.container{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h4{
+    padding-top: 10px;
+}
+#LogoInstitute{
+    width: 150px;
+    margin: 0 auto;
+}
+#educontainer{
+    text-align: center;
+    border-width:4px;
+    border-style:groove;
+    border-color:#320081;
+    border-radius:22px;
+    width:20%;
+}
+h1, h2{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+

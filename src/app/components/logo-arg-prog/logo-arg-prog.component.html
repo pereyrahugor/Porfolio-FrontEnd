@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="container">
+     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="containerLogo">
+        <img src="../../../assets/ArgProgLogo.png" id="ArgProgLogo">
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <button type="button" id="add" class="icon-btn add-btn" routerLink="/newSocial" *ngIf="isLogged">
+            <div class="add-icon"></div>
+            <div class="btn-txt">Agregar RedSocial</div>
+        </button>
+    </div>
+    <div class="container col-xs-2 col-sm-2 col-md-2 col-lg-2" id="rs">
+        <div *ngFor="let social of social">
+            <a href="{{social.linkSocial}}"
+            target="_blank">
+                <img src="{{social.imgSocial}}"
+                id="icon-github"
+                [hspace]="5">
+            </a>
+            <div *ngIf="isLogged">
+                <button type="button" routerLink="/editExperience/{{social.id}}"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" ><i class="bi bi-trash" (click)="onDeleteSoc(social.id)"></i></button>
+            </div>
+        </div>
+        <a href="/login">
+            <button type="button" 
+            id="login" 
+            class="btn btn-outline-primary" 
+            *ngIf="!isLogged"
+            >Login</button>
+        </a>
+        <button type="button"
+         id="logOut" 
+         class="btn btn-outline-danger" 
+         (click)="onLogOut()"
+         *ngIf="isLogged"
+         >Logout</button>
+    </div>
+    </div>
+</div>

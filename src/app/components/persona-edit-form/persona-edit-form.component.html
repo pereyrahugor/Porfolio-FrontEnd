@@ -1,0 +1,160 @@
+<section class="background-radial-gradient overflow-hidden" id="section" *ngIf="per">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1
+            class="my-5 display-5 fw-bold ls-tight"
+            style="color: hsl(218, 81%, 95%)"
+          >
+            Actualizar <br />
+            <span style="color: hsl(218, 81%, 75%)"
+              >Datos Personales</span
+            >
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Completa los datos
+            <br />Todos son obligatorios
+            <br />En imagen se debe colocar un URL, se recomienda utilizar ImgBB.
+            <br /><a href="https://imgbb.com">https://imgbb.com</a>
+
+          </p>
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div
+            id="radius-shape-1"
+            class="position-absolute rounded-circle shadow-5-strong"
+          ></div>
+          <div
+            id="radius-shape-2"
+            class="position-absolute shadow-5-strong"
+          ></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form #f="ngForm" (ngSubmit)="onUpdatePersona()" novalidate>
+                <!-- Exp img -->
+                <div class="form-outline mb-4">
+                  <input 
+                    type = "string"
+                    id = "name"
+                    name = "name"
+                    class="form-control"
+                    [(ngModel)] = "per.name"
+                    required
+                  />
+                  <label class="form-label" for="name">Nombre</label>
+                </div>
+                <!-- business  -->
+                <div class="form-outline mb-4">
+                    <input
+                      type = "string"
+                      id = "lastName"
+                      name = "lastName"
+                      class="form-control"
+                      [(ngModel)] = "per.lastName"
+                      required
+                    />
+                    <label class="form-label" for="lastName">Apellido</label>
+                  </div>
+                <!-- business  -->
+                <div class="form-outline mb-4">
+                  <input
+                    type = "string"
+                    id = "text"
+                    name = "text"
+                    class="form-control"
+                    [(ngModel)] = "per.text"
+                    required
+                  />
+                  <label class="form-label" for="text">Presentación</label>
+                </div>
+                <!-- position  -->
+                <div class="form-outline mb-4">
+                    <input 
+                      type = "string"
+                      id = "description"
+                      name = "description"
+                      class="form-control"
+                      [(ngModel)] = "per.description"
+                      required
+                    />
+                    <label class="form-label" for="description">Descripción</label>
+                  </div>
+                  <!-- yearIn  -->
+                  <div class="form-outline mb-4">
+                    <input 
+                      type = "string"
+                      id = "imgPerfil"
+                      name = "imgPerfil"
+                      class="form-control"
+                      [(ngModel)] = "per.imgPerfil"
+                      required
+                    />
+                    <label class="form-label" for="imgPerfil">Imagen de Perfil</label>
+                  </div>
+                  <!-- yearOut  -->
+                  <div class="form-outline mb-4">
+                    <input 
+                      type = "string"
+                      id = "imgBanner"
+                      name = "imgBanner"
+                      class="form-control"
+                      [(ngModel)] = "per.imgBanner"
+                      required
+                    />
+                    <label class="form-label" for="imgBanner">Banner</label>
+                  </div>
+                    <!-- descriptionPosition  -->
+                    <div class="form-outline mb-4">
+                        <input 
+                          type = "string"
+                          id = "country"
+                          name = "country"
+                          class="form-control"
+                          [(ngModel)] = "per.country"
+                          required
+                        />
+                        <label class="form-label" for="country">Pais</label>
+                      </div>
+                      <!-- descriptionPosition  -->
+                    <div class="form-outline mb-4">
+                        <input 
+                          type = "string"
+                          id = "estate"
+                          name = "estate"
+                          class="form-control"
+                          [(ngModel)] = "per.estate"
+                          required
+                        />
+                        <label class="form-label" for="estate">Provincia</label>
+                      </div>
+                      <!-- descriptionPosition  -->
+                    <div class="form-outline mb-4">
+                        <input 
+                          type = "string"
+                          id = "contact"
+                          name = "contact"
+                          class="form-control"
+                          [(ngModel)] = "per.contact"
+                          required
+                        />
+                        <label class="form-label" for="contact">Correo Electronico</label>
+                      </div>
+                <!-- Submit button -->
+                <div class="container">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block mb-4"
+                    id="loginButton"
+                    >Actualizar</button>
+                  <button (click)="volver()"
+                    class="btn btn-primary btn-block mb-4"
+                    id="volverButton"
+                    >Volver</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

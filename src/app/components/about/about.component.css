@@ -1,0 +1,26 @@
+.row{
+    padding: 10px;
+    border-bottom: 4px;
+    border-top: 0;
+    border-style:groove;
+    border-color:#01c4e7;
+}
+div{
+    background-color: #010d19;
+    text-align: center;
+    color: white;
+}
+#nombre{
+    font-weight: bold;
+}
+#perfil{
+        position: absolute;
+        width: 10%;
+        border-radius: 100%;
+        left: 5%;
+        top: 350px;
+        max-height: 300px;
+}
+.container{
+    width: 30%;
+}
