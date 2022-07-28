@@ -9,7 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class BannerComponent implements OnInit {
 
-  persona: persona = new persona("", "", "", "", "", "", "", "","");
+  persona: persona = new persona("", "", "", "", "", "", "", "","","");
 
   constructor(public personaService: PersonaService) { }
 
