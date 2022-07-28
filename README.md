@@ -26,28 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-Notas de base de datos
-
-Nombre base: portfoliohrp
-clave trabajo:""
-clave casa:"Destiny22017@"
-
-query datos tabla person
-
-insert into persona (id, contact, country, description, estate, img_banner, img_perfil, last_name, name, text)
-					values(1, "pereyrahugor@gmail.com", "Argentina", "Asesor en Tegnologia de Gestión", "Buenos Aires",
-							"https://es.dreamstime.com/banner-de-desarrollo-web-concepto-c%C3%B3digo-sitio-programaci%C3%B3n-conjuntos-completos-aplicaci%C3%B3n-seguridad-pruebas-plataforma-image209521403",
-                            "https://icon-library.com/icon/icon-ninja-5.html",
-                            "Pereyra","Hugo Reynaldo","FullStack Developer Jr");
-                            
-select * from persona;
-
-insert into experience (id, business, description_position, id_persona, img_business, position, year_in, year_out)
-					values(1, "Metalùrgica JMD","Tareas Generales de producción",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Operaio",'2009-11-25','2015-06-01');
-insert into experience (id, business, description_position, id_persona, img_business, position, year_in, year_out)
-					values(2, "Metalùrgica JMD","Implementación Normas ISO y Mejora Continua",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Responsable SGI",'2015-06-01','2022-01-01'); 
-insert into experience (id, business, description_position, id_persona, img_business, position, year_in)
-					values(3, "Metalùrgica JMD","Seguimiento y Mejora de Procesos",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Jefe de Calidad y Mejora Continua",'2022-01-01'); 
-
-
-select * from experience;
+For info of Query DBA view src/NOTAS.DBA.txt
