@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class AboutComponent implements OnInit {
 
-  persona: persona = new persona("", "", "", "", "", "", "", "","");
+  persona: persona = new persona("", "", "", "", "", "", "", "","","");
   isLogged = false;
 
   constructor(public personaService: PersonaService, private tokenService: TokenService) { }

@@ -139,6 +139,17 @@
                         />
                         <label class="form-label" for="contact">Correo Electronico</label>
                       </div>
+                      <div class="form-outline mb-4">
+                        <input 
+                          type = "string"
+                          id = "phone"
+                          name = "phone"
+                          class="form-control"
+                          [(ngModel)] = "per.phone"
+                          required
+                        />
+                        <label class="form-label" for="phone">Celular (formato internacional)</label>
+                      </div>
                 <!-- Submit button -->
                 <div class="container">
                   <button

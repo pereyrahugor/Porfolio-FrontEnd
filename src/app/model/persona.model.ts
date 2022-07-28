@@ -10,9 +10,10 @@ export class persona {
     country: String;
     estate: String;
     contact: String;
+    phone: String;
 
     constructor (name: String, lastName: String, text: String, description: String, imgPerfil: String, imgBanner: String,
-                country: String, estate: String, contact: String) {
+                country: String, estate: String, contact: String, phone: String) {
 
         this.name = name;
         this.lastName = lastName;
@@ -23,5 +24,6 @@ export class persona {
         this.country = country;
         this.estate = estate;
         this.contact = contact;
+        this.phone = phone;
     }
 }
